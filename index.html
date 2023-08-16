@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h3>Rock-Paper-Scissors Game</h3>
+        </div>
+        <div>
+            <input type="text" class="player-choice" placeholder="Choose rock, paper or scissors">
+            <!-- <form>
+                <select name="game-choices" class="select-choice">
+                    <option value="rock"><Rock</option>
+                    <option value="paper"><Paper</option>
+                    <option value="scissors"><Scissors</option>
+                </select>
+            </form> -->
+        </div>
+        <button class="play-button">Play</button>
+        <div>
+            <h4>Game Results:</h4>
+        </div>
+        <div class="game-results"></div>
+        
+        <button class="reset-button" style="display:none;">Reset</button>
+        <div>Round: <span class="round"></span></div>
+        <table style="border:1px solid black;">
+            <thead> <td> Player Score </td> <td>Computer Score </td></thead>
+            <tr><td class="player-results">0</td><td class="computer-results">0</td></tr>
+        </table>
+    </div>    
+</body>
+</html>
