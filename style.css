@@ -4,8 +4,7 @@
 }
 .container{
     display: flex;
-    flex-flow: column;
-    align-items: center;
+    justify-content: space-evenly;
 }
 .title{
 
@@ -21,12 +20,45 @@
 .select-choice{
     margin: 20px;
 }
-.play-button{
-    width:100px;
-}
+
 .game-results{
-    margin: 20px 0 0 0;
+    margin: 20px 0 40px 0;
 }
 div > h4{
     margin: 20px 0 0 0;
+}
+.game-section{
+    border-radius: 4px;
+    padding: 50px;
+    box-shadow: 4px 4px 20px gray;
+}
+.choice-mouseover{
+
+    margin: 10px;
+}
+.choice-buttons{
+
+    background-color: gray;
+    padding: 15px;
+    margin: 0 10px 10px 10px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+}
+.reset-button{
+    display: none;
+    padding: 6px 10px;
+    margin: 10px;
+}
+table{
+    margin: 0 0 10px 0;
+    border:1px solid black;
+}
+.new-game{
+    display: flex;
+    justify-content: center;
+}
+.start-over{
+    margin: 20px 0 0 0;
+    padding: 5px 10px;
 }

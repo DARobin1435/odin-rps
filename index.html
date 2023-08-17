@@ -8,32 +8,36 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="title">
-            <h3>Rock-Paper-Scissors Game</h3>
+    <div class="title">
+        <h3>Rock-Paper-Scissors Game</h3>
+    </div>
+
+    <div class="container">    
+        <div class="game-section">
+
+            <div>
+                <button class="choice-buttons rock" value="rock">Rock</button>
+                <button class="choice-buttons paper" value="paper">Paper</button>
+                <button class="choice-buttons scissors" value="scissors">Scissors</button>
+            </div>
+            <button class="reset-button">Reset</button>
         </div>
-        <div>
-            <input type="text" class="player-choice" placeholder="Choose rock, paper or scissors">
-            <!-- <form>
-                <select name="game-choices" class="select-choice">
-                    <option value="rock"><Rock</option>
-                    <option value="paper"><Paper</option>
-                    <option value="scissors"><Scissors</option>
-                </select>
-            </form> -->
-        </div>
-        <button class="play-button">Play</button>
-        <div>
-            <h4>Game Results:</h4>
-        </div>
-        <div class="game-results"></div>
         
-        <button class="reset-button" style="display:none;">Reset</button>
-        <div>Round: <span class="round"></span></div>
-        <table style="border:1px solid black;">
-            <thead> <td> Player Score </td> <td>Computer Score </td></thead>
-            <tr><td class="player-results">0</td><td class="computer-results">0</td></tr>
-        </table>
-    </div>    
+        <div class="score-section">
+
+            <div>
+                <div class="game-results"></div>
+            </div>
+            <div>Round: <span class="round">0</span></div>
+            <table>
+                <thead> <td> Player Score </td> <td>Computer Score </td></thead>
+                <tr><td class="player-results">0</td><td class="computer-results">0</td></tr>
+            </table>
+            
+        </div>
+    </div>
+    <div class="new-game">
+        <button onclick="location.reload()" class="start-over"> New Game</button>
+    </div> 
 </body>
 </html>
